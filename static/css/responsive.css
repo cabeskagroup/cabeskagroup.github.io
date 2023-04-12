@@ -16,6 +16,7 @@
 
 	.banner-section-three .slide-item{
 		padding: 120px 0;
+	
 	}
 
 	.header-style-five .inner-container{
@@ -942,7 +943,7 @@
 	.main-menu .navbar-collapse > .navigation > li > a:active,
 	.main-menu .navigation > li .mega-menu-bar .column > ul > li > a,
 	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#ff5926;
+		background:#c22d00;
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li:hover > a,

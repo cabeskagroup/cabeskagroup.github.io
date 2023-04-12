@@ -5,7 +5,7 @@
 ====================================================================
 
 ***/
-
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i');
 @import url('https://fonts.googleapis.com/css?family=BenchNine:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
@@ -18,6 +18,8 @@
 @import url('jquery.bootstrap-touchspin.css');
 @import url('jquery-ui.css');
 @import url('jquery.fancybox.min.css');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 
 /*** 
 
@@ -2433,6 +2435,51 @@ header-style-seven .nav-toggler:hover{
 	background:#222222;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** 
 
 ====================================================================
@@ -2440,6 +2487,12 @@ header-style-seven .nav-toggler:hover{
 ====================================================================
 
 ***/
+.homeImg{
+	width: 100%;
+	height: auto;
+}
+
+
 
 .banner-section{
 	position: relative;
@@ -4478,6 +4531,10 @@ h1 {
 	
   
 }
+
+
+
+
 /*** 
 
 ====================================================================
@@ -4501,26 +4558,51 @@ h1 {
 	box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
 	border-radius: 4px;
   }
-  
-  
 
+
+  /**  about page history   **/
+
+  .hcard {
+
+	margin-left: auto;
+    margin-right: auto;
+}
+  
+  .hcard {
+	position:relative;
+	top: 0;
+	width: 100%;
+	background: rgb(0, 0, 0);
+	padding: 1.5rem;
+	box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+	border-radius: 4px;
+  }
+  
+  .history{
+	color: rgb(214, 214, 214);
+  }
+
+  .T_history{
+	text-align: center;
+	font-size: 3em;
+  }
 
 /**  btn   **/
 
 
 :root {
-	--bg-body: rgba(25, 25, 25, 1);
+	--bg-body: rgb(0, 0, 0);
 	--bg-body-image: radial-gradient(30% 90% ellipse at bottom center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);
-	--bg-body-hover: rgba(33, 33, 33, 1);
-	--bg-button: rgba(255, 255, 255, 0);
-	--bg-button-hover: rgba(255, 255, 255, 0.05);
+	--bg-body-hover: rgb(0, 0, 0);
+	--bg-button: rgba(110, 110, 110, 0);
+	--bg-button-hover: rgba(90, 90, 90, 0.05);
 	--bg-button-active: rgb(0, 0, 0);
-	--bg-mask: rgba(0, 0, 0, 0.5);
-	--bg-mask-hover: rgb(0, 0, 0);
+	--bg-mask: rgba(85, 85, 85, 0.5);
+	--bg-mask-hover: rgb(199, 199, 199);
 	--border-button: rgba(0, 0, 0, 0.2);
 	--border-button-hover: rgb(0, 0, 0);
 	--color-button: rgba(0, 0, 0, 0.6);
-	--color-button-hover: rgb(0, 0, 0);
+	--color-button-hover: rgb(80, 80, 80);
 	--color-button-active: var(--body-bg);
 	--font-button: "Varela Round", sans-serif;
 	--shadow-button-hover: 0 0 0.3125rem rgba(0, 0, 0, 0.8);
@@ -4652,6 +4734,464 @@ figure {
   
 
 
+
+
+/*** 
+
+====================================================================
+			addmision card
+====================================================================
+
+***/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+.Atitle{
+	margin: 20px;
+	font-size: 2em ;
+	text-decoration-line: underline;
+	font-family: 'Oswald', sans-serif;
+	text-align: center
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+.cardcard{
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.container{
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.container .card{
+	margin: 0 auto;
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #232323;
+  border-radius: 20px;
+  overflow: hidden;
+  margin:20px;
+}
+
+.container .card:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #931314;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before{
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after{
+  content: 'cabe';
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255,255,25,0.05)
+}
+
+.container .card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .card .imgBx img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-25deg);
+  width: 270px;
+}
+
+.container .card .contentBx{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx{
+  height: 210px;
+}
+
+.container .card .contentBx h2{
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+.container .card .contentBx .size, .container .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .size{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .color{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .size h3, .container .card .contentBx .color h3{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx .size span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .size span:hover{
+  background: #931314;
+}
+
+.container .card .contentBx .color span{
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .color span:nth-child(2){
+  background: red;
+}
+
+.container .card .contentBx .color span:nth-child(3){
+  background: #03a9f4;
+}
+
+.container .card .contentBx .color span:nth-child(4){
+  background: #e91e63;
+}
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container .card:hover .contentBx a{
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.75s;
+  
+}
+
+
+
+
+
+
+.admision_card{
+	width: 100%;
+	height: auto;
+	
+	margin: 0 auto;
+	
+}
+
+
+
+
+
+/*** 
+
+====================================================================
+		                	abou page card
+====================================================================
+
+***/
+
+
+.about_container {
+	width: 1200px !important;
+	padding: 0 !important;
+	margin-right: auto;
+	margin-left: auto;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1439px) {
+	.about_container {
+	  max-width: 1279px !important;
+	  padding: 0 !important;
+	  margin: 0 80px !important;
+	  width: auto !important;
+	}
+  }
+  @media screen and (max-width: 991px) {
+	.about_container {
+	  max-width: 959px !important;
+	  margin: 0 16px !important;
+	  padding: 0 !important;
+	  width: auto !important;
+	}
+  }
+  
+  .gradient-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+	padding: 30px;
+  }
+  @media screen and (max-width: 991px) {
+	.gradient-cards {
+	  grid-template-columns: 1fr;
+	}
+  }
+  
+  .about_container-title {
+	text-align: center;
+	padding: 0 !important;
+	margin-bottom: 40px;
+	font-size: 40px;
+	color: #fff;
+	font-weight: 600;
+	line-height: 60px;
+  }
+  
+  .about_card {
+	max-width: 550px;
+	border: 0;
+	width: 100%;
+	margin-inline: auto;
+  }
+  
+  .about_container-card {
+	position: relative;
+	border: 2px solid transparent;
+	background: linear-gradient(71deg, #080509, #1a171c, #080509);
+	background-clip: padding-box;
+	border-radius: 45px;
+	padding: 40px;
+  }
+  .about_container-card img {
+	margin-bottom: 32px;
+  }
+  
+  .bg-green-box,
+  .bg-white-box,
+  .bg-yellow-box,
+  .bg-blue-box {
+	position: relative;
+  }
+  
+  .bg-green-box::after,
+  .bg-white-box::after,
+  .bg-yellow-box::after,
+  .bg-blue-box::after {
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	left: -1px;
+	right: -1px;
+	content: "";
+	z-index: -1;
+	border-radius: 45px;
+  }
+  
+  .bg-green-box::after {
+	background: linear-gradient(71deg, #0d1212, #3da077, #0d1212);
+  }
+  
+  .bg-white-box::after {
+	background: linear-gradient(71deg, #121013, #b0afb0, #121013);
+  }
+  
+  .bg-yellow-box::after {
+	background: linear-gradient(71deg, #110e0e, #afa220, #110e0e);
+  }
+  
+  .bg-blue-box::after {
+	background: linear-gradient(71deg, #0c0a0e, #5f6fad, #0c0a0e);
+  }
+  
+  .about_card-title {
+	font-weight: 600;
+	color: white;
+	letter-spacing: -0.02em;
+	line-height: 40px;
+	font-style: normal;
+	font-size: 28px;
+	padding-bottom: 8px;
+  }
+  
+  .about_card-description {
+	font-weight: 600;
+	line-height: 32px;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	max-width: 470px;
+  }
+  
+
+
+
+
+
+
+
+/*** 
+
+====================================================================
+			union rank
+====================================================================
+
+***/
+
+
+.badge {
+  position: relative;
+  width: 216px;
+  display: inline-block;
+  margin: 40px;
+}
+.badge .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.7em;
+  position: absolute;
+  top: -28px;
+  border-radius: 8px 8px 0 0;
+  text-align: center;
+  width: 100%;
+  background: red;
+  padding: 20px 0;
+}
+.badge .subtitle {
+  position: absolute;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.8em;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 100px;
+}
+.badge .subtitle:after {
+  content: "★ ★ ★";
+  display: block;
+  font-size: .4em;
+  position: relative;
+  margin: 15px 0 0;
+  transition: all .3s;
+}
+.badge:hover .subtitle:after {
+  word-spacing: 30px;
+}
+
+.red .title {
+  background: #DC514E;
+}
+.red .subtitle:after {
+  color: #DC514E;
+}
+
+.green .title {
+  background: #2ecc71;
+}
+.green .subtitle:after {
+  color: #2ecc71;
+}
+
+.gray .title {
+  background: #95a5a6;
+}
+.gray .subtitle:after {
+  color: #95a5a6;
+}
+
+.yellow .title {
+  background: #f1c40f;
+}
+.yellow .subtitle:after {
+  color: #f1c40f;
+}
+
+.blue .title {
+  background: #3498db;
+}
+.blue .subtitle:after {
+  color: #3498db;
+}
+
+
+
 /*** 
 
 ====================================================================
@@ -4686,7 +5226,7 @@ figure {
 }
 
 
-.container {
+.acontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -4701,7 +5241,7 @@ img {
   object-fit: cover;
 }
 
-.card {
+.acard {
   display: flex;
   flex-direction: column;
   width: clamp(20rem, calc(20rem + 2vw), 22rem);
@@ -4715,7 +5255,7 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 
 
-.card__body {
+.acard__body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -4723,12 +5263,12 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 
-.card__body h4 {
+.acard__body h4 {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
 
-.card__footer {
+.acard__footer {
   display: flex;
   padding: 1rem;
   margin-top: auto;
